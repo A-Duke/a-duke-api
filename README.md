@@ -5,6 +5,8 @@
 
 ## Eventual Atomicity (eva) for Cassandra
 
+`eva` + `cassandra` = `friendship`
+
 Scenario: user orders one item with price 100, so if all goes well:
  
 - Stock amount is decreased by 1

@@ -22,18 +22,18 @@ If any operation fails previous operations must be `compensated`, e.g.:
 
 Thus `eventual transactions` do not fully revert operations but compensate them, so if operation is compensated two operations will be eventually visible
 
-Thus stock and user in this example are `stateful` objects, state of any object can be changed by applying operations
+In this example `stock` and `user`  are `stateful` objects, state of any object can be changed by applying operations
 
 ## Operation History
 
 - If someone changes stock item price it should be kept in history
 - Same for user profile modifications
-- In other words we should track any data modification
+- In other words we should remember any state modification
 
 ## Binary States/Operations
 
 - State/operation may be too complex to be explained as a database record
-- Even if they can be explained, structure can be changed in time
+- Even if they can be explained, structures can be changed in time
 - Binary eliminates the need to maintain database structures - all is kept as it comes to database
 - Binary may even represents complex structures in third and above normal forms
 
@@ -43,13 +43,13 @@ Thus stock and user in this example are `stateful` objects, state of any object 
 - Each aggregate record represents one or few operations/states (e.g. "sales per month")
 - Views and aggregates are completely separated from states/operations and calculated after them
 - Above means that even if user is created it is not possible to directly issue queries like "select name from users"
-  - User is represented as a binary object
+  - User state is kept as a binary object, database knows nothing about `name`
   - View `users ordered by name` which has `name` field should be created and calculated separately (quite like cassandra `materialized view`)
   
 ## Easy Tests
 
-- Operation just converts one object to another, no need to have/emulate database to store sates 
-- Still it may be needed to mock some views, but that's pretty easy
+- Operation just converts one state to another, no need to have/emulate database to store sates to test operation 
+- Still it may be needed to mock some views/aggregates, but that's pretty easy
 
 ## Easy Things
 

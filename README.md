@@ -3,29 +3,57 @@
 
 # Motivation
 
+This project materializes few dreams
+
 ## Eventual Atomicity (eva) for Cassandra
 
-`eva` + `cassandra` = `friendship`
+`eva` + `cassandra` = two girls
 
 Scenario: user orders one item with price 100, so if all goes well:
  
-- Stock amount is decreased by 1
-- User balance is decreased by 100
+- Stock item balance is decreased by 1
+- User money balance is decreased by 100
 
 If any operation fails previous operations must be `compensated`, e.g.:
 
-1. Stock amount is decreased by 1
-2. Now it is turned out that user balance is 90 and may not be decreased by 100
-3. Stock amount is `compensated` by 1
+- Stock balance is decreased by 1
+- Now it is turned out that user balance is 90 and may not be decreased by 100
+- Stock amount is `compensated` by 1
 
+Thus `eventual transactions` do not fully revert operations but compensate them, so if operation is compensated two operations will be eventually visible
 
-Finally:
+Thus stock and user in this example are `stateful` objects, state of any object can be changed by applying operations
 
-- `COMPLETED` must not coexist with any other status
-- `NOT_STARTED` must follow `NOT_STARTED` or `FAILED`
+## Operation History
 
-Transaction final status: `COMPLETED` if all operations have `CEOMPLETED` status, `FAILED` otherwise
+- If someone changes stock item price it should be kept in history
+- Same for user profile modifications
+- In other words we should track any data modification
 
+## Binary States/Operations
+
+- State/operation may be too complex to be explained as a database record
+- Even if they can be explained, structure can be changed in time
+- Binary eliminates the need to maintain database structures - all is kept as it comes to database
+- Binary may even represents complex structures in third and above normal forms
+
+## States vs Views vs Aggregates
+
+- Each view record represents one state/operation/transaction record (e.g. `users ordered by name` or `users whose balance more than 100k`)
+- Each aggregate record represents one or few operations/states (e.g. "sales per month")
+- Views and aggregates are completely separated from states/operations and calculated after them
+- Above means that even if user is created it is not possible to directly issue queries like "select name from users"
+  - User is represented as a binary object
+  - View `users ordered by name` which has `name` field should be created and calculated separately (quite like cassandra `materialized view`)
+  
+## Easy Tests
+
+- Operation just converts one object to another, no need to have/emulate database to store sates 
+- Still it may be needed to mock some views, but that's pretty easy
+
+## Easy Things
+
+Everything above should be very easy to implement and use 
 
 # Usage
 

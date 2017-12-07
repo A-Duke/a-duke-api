@@ -65,6 +65,10 @@ How it works: interactions of core classes/modules
 
 # Links
 
-https://stackoverflow.com/questions/47631686/what-is-cassandra-static-fields-sense
-https://stackoverflow.com/questions/47354241/cassandra-and-aggregated-data
-https://books.google.ru/books?id=bh8_0FD3qgQC&pg=PA60
+- https://stackoverflow.com/questions/47655837/cassandra-filter-latest-rows-from-an-append-only-table
+  - having billions of partitions per node will cause slow down repairs and compactions significantly.
+  - but: https://stackoverflow.com/questions/30648479/choosing-a-partition-key-for-a-cassandra-table-how-many-is-too-many-partition
+  - and http://grokbase.com/t/cassandra/user/14c555q5t3/pros-and-cons-of-lots-of-very-small-partitions-versus-fewer-larger-partitions 
+- https://stackoverflow.com/questions/47631686/what-is-cassandra-static-fields-sense
+- https://stackoverflow.com/questions/47354241/cassandra-and-aggregated-data
+- https://books.google.ru/books?id=bh8_0FD3qgQC&pg=PA60

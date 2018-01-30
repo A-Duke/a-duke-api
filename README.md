@@ -6,7 +6,7 @@
 This project materializes few dreams in connection to database-related development:
 
 - Eventual Atomicity for Cassandra
-  - Scenario: transfer money between accounts, two updates are needed. If second update fails then previous operations must be `compensated`.
+  - Scenario: transfer money between accounts, need two updates. If second update fails then first one must be `compensated`.
 - No transactions => no deadlocks
 - History. All operations are tracked
 - Binary States/Operations. No tables anymore to keep states and operations, use pure Java objects instead (still over Cassandra/JDBC)

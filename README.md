@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/eva4j/eva4j-api.svg?branch=master)](https://travis-ci.org/eva4j/eva4j-api)
 [![Coverage Status](https://coveralls.io/repos/eva4j/eva4j-api/badge.png)](https://coveralls.io/r/eva4j/eva4j-api)
 
-![atomik java](atomik-java.png| width=200)
+![atomik java](atomik-java.png|width=200)
 
 # Motivation
 

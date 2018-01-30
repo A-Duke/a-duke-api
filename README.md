@@ -3,8 +3,6 @@
 
 <img src="atomik-java.png" width="300">
 
-# Motivation
-
 This project materializes few dreams:
 
 - Eventual Atomicity for Cassandra

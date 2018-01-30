@@ -11,7 +11,7 @@ This project materializes few dreams:
 - Binary States/Operations. No tables anymore to keep states and operations, all data is kept as serialized objects.
 - Simplicity
   - Everything above must be very simple in usage and tests
-  - Tests and tested classes should not work with database directly
+  - Tests should not work with database directly
 
 # Usage
 

@@ -8,7 +8,7 @@ This project materializes few dreams:
 - Eventual Atomicity for Cassandra
   - Scenario: transfer money between accounts, two updates are needed. If second update fails then previous operations must be `compensated`.
 - History. All state modifications should be tracked
-- Binary States/Operations. No tables anymore to keep states and operations.
+- Binary States/Operations. No tables anymore to keep states and operations, all data is kept as serialized objects.
 - Usage Simplicity. Everything above must be very simple in usage
 - Tests Simplicity. Tests and tested classes should not work with database directly.
 

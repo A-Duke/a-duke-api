@@ -2,6 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/eva4j/eva4j-api/badge.png)](https://coveralls.io/r/eva4j/eva4j-api)
 
 <img src="atomik-java.png" width="300">
+
 # Motivation
 
 This project materializes few dreams 

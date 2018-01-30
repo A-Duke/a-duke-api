@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/eva4j/eva4j-api.svg?branch=master)](https://travis-ci.org/eva4j/eva4j-api)
 [![Coverage Status](https://coveralls.io/repos/eva4j/eva4j-api/badge.png)](https://coveralls.io/r/eva4j/eva4j-api)
 
-<img src="atomik-java.png" width="300">
+<img src="docs/a-duke.png" width="300">
 
 This project materializes few dreams in connection to Java database development:
 

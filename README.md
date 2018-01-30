@@ -45,3 +45,4 @@ Miroservices
   - In this post, we’ll describe how we reduced the memory footprint of linkerd, our JVM-based service mesh for cloud-native applications, by almost 80%—from 500mb to 105mb—by tuning the JVM’s runtime parameters. 
 - https://stackoverflow.com/questions/38747525/spring-cloud-microservices-memory-usage
   -  And all of them consume over 350mb-500mb and sometimes crash, although they will not be used. I thought microservices should be lightweight. But with this memory usage
+  - atomey, atomie

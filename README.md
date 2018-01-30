@@ -3,7 +3,7 @@
 
 <img src="atomik-java.png" width="300">
 
-This project materializes few dreams:
+This project materializes few dreams in connection to database-related development:
 
 - Eventual Atomicity for Cassandra
   - Scenario: transfer money between accounts, two updates are needed. If second update fails then previous operations must be `compensated`.

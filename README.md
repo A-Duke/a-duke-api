@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/eva4j/eva4j-api.svg?branch=master)](https://travis-ci.org/eva4j/eva4j-api)
 [![Coverage Status](https://coveralls.io/repos/eva4j/eva4j-api/badge.png)](https://coveralls.io/r/eva4j/eva4j-api)
 
+![atomik java](atomik-java.png)
+
 # Motivation
 
 This project materializes few dreams
@@ -81,8 +83,8 @@ Miroservices
 - https://developers.redhat.com/blog/2017/03/14/java-inside-docker/
 - https://dzone.com/articles/how-to-decrease-jvm-memory-consumption-in-docker-u
 - http://trustmeiamadeveloper.com/2016/03/18/where-is-my-memory-java/
-  - What I can say as a conclusion? WellÖ never put words ìjavaî and ìmicroî in the same sentence :) I'm kidding - just remember that dealing with memory in case of java, linux and docker is a bit more tricky thing than it seems at first.
+  - What I can say as a conclusion? Well‚Ä¶ never put words ‚Äújava‚Äù and ‚Äúmicro‚Äù in the same sentence :) I'm kidding - just remember that dealing with memory in case of java, linux and docker is a bit more tricky thing than it seems at first.
 - https://buoyant.io/2016/06/17/small-memory-jvm-techniques-for-microservice-sidecars/
-  - In this post, weíll describe how we reduced the memory footprint of linkerd, our JVM-based service mesh for cloud-native applications, by almost 80%ófrom 500mb to 105mbóby tuning the JVMís runtime parameters. 
+  - In this post, we‚Äôll describe how we reduced the memory footprint of linkerd, our JVM-based service mesh for cloud-native applications, by almost 80%‚Äîfrom 500mb to 105mb‚Äîby tuning the JVM‚Äôs runtime parameters. 
 - https://stackoverflow.com/questions/38747525/spring-cloud-microservices-memory-usage
   -  And all of them consume over 350mb-500mb and sometimes crash, although they will not be used. I thought microservices should be lightweight. But with this memory usage

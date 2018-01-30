@@ -10,7 +10,7 @@ This project materializes few dreams in connection to database-related developme
 - History. All operations are tracked
 - Binary States/Operations. No tables anymore to keep states and operations
 - Simplicity
-  - Everything above must be very simple in usage and tests
+  - Everything above must be very simple in usage and testing
   - Tests should not work with database directly
 
 # Usage

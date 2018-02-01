@@ -8,9 +8,9 @@ This project materializes few dreams in connection to Java database development:
 - Eventual Atomicity for Cassandra
   - Scenario: transfer money between accounts, need two updates. If second update fails then first one must be `compensated`.
   - This was a primary goal of the entire project and gave project a name
-  - Not only Cassandra, but any JDBC source, too
   - We beleive that in most cirsumstances it is possible to avoid transactions and use compensations instead
     - Pros: No database deadlocks anymore
+  - So not only Cassandra, but any JDBC source, too
 - History. All operations are tracked automatically
 - Binary States/Operations
   - No tables anymore to keep states and operations

@@ -7,6 +7,7 @@ This project materializes few dreams in connection to Java database development:
 
 - Eventual Atomicity for Cassandra
   - Scenario: transfer money between accounts, need two updates. If second update fails then first one must be `compensated`.
+  - This was a primary goal of the entire project and gave project a name
 - History. All operations are tracked automatically
 - Binary States/Operations
   - No tables anymore to keep states and operations

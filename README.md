@@ -15,7 +15,7 @@ This project materializes few dreams in connection to Java database development:
 - Binary States/Operations
   - No tables anymore to keep states and operations
   - Pure Java objects, Cassandra/JDBC as a data storage
-  - Only two tables are needed - one for operations, one for states, so easy to create an maintai
+  - Only two tables are needed - one for operations, one for states, so easy to create an maintain
 - Simplicity
   - Everything above must be very simple in usage and testing
   - Tests do not work with database directly

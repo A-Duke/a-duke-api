@@ -7,9 +7,8 @@ This project materializes few dreams in connection to Java database development:
 
 - Eventual Atomicity for Cassandra
   - Scenario: transfer money between accounts, need two updates. If second update fails then first one must be `compensated`.
-- No transactions => no deadlocks
-- History. All operations are tracked
-- Binary States/Operations. No tables anymore to keep states and operations, use pure Java objects instead (still over Cassandra/JDBC)
+- History. All operations are tracked automatically
+- Binary States/Operations. No tables anymore to keep states and operations, use pure Java objects instead (Cassandra/JDBC as storage)
 - Simplicity
   - Everything above must be very simple in usage and testing
   - Tests do not work with database directly

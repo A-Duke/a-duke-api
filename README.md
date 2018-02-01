@@ -10,7 +10,7 @@ This project materializes few dreams in connection to Java database development:
   - This was a primary goal of the entire project and gave project a name
   - Not only Cassandra, but any JDBC source, too
   - We beleive that in most cirsumstances it is possible to avoid transactions and use compensations instead
-    - No database deadlocks anymore
+    - Pros: No database deadlocks anymore
 - History. All operations are tracked automatically
 - Binary States/Operations
   - No tables anymore to keep states and operations
